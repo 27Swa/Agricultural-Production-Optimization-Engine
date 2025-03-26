@@ -1,53 +1,71 @@
-# Agricultural-Production-Optimization-Engine
-As we all know that agriculture depends largely on the nature of soil and the climatic conditions and many a times, we face unpredictable changes in climate like, non-seasonal rainfall or heat waves or fluctuations in humidity levels, etc. and all such events cause a great loss to our farmers and farming, because of which they are not able to utilize their agricultural land to it's fullest.So to solve all such problems, I have build a Machine Learning Model by the virtue of which we can help farmers, optimize the agricultural production, because this predictive model will help them understand that for a particular soil & given climatic condition, which crop will be best suitable for the harvest.
+# Agricultural-Production-Optimization-Engine  
 
-There are 7 key factors that I've taken into account which will help us in determining, exactly which crop should be grown and at what period of time, viz. Amount of Nitrogen, Phosphorus and Potassium in soil, Temperature in degree celcius, Humidity, pH and Rainfall in mm.
+Agriculture relies on soil composition and climate. However, unpredictable weather events (rain, heatwaves, humidity shifts) can lead to major losses.  
+This project builds a **Machine Learning model** that predicts **optimal crops** for specific soil and climate conditions, helping farmers **optimize agricultural production**.
 
-Tools used: Python & Jupyter Notebook
-Libraries used: Numpy, Pandas, Seaborn, Matplotlib, ipywidgets and sklearn.
-Machine Learning Algorithms used: Clustering Analysis and Logistic Regression.
+---
 
-# Optimizing-Agricultural-Production
-## Problem Statement -
-Building a Predictive Model so as to suggest the most suitable crops to grow based on the available climatic and soil conditions.
+## 🛠 Key Factors Considered:
+1. **Soil Composition:**  
+   - Nitrogen (N), Phosphorus (P), Potassium (K)  
+   - pH levels  
+2. **Climate Conditions:**  
+   - Temperature (°C)  
+   - Humidity (%)  
+   - Rainfall (mm)  
+3. **New Feature Added:**  
+   - **Soil Type Classification** (Categorical feature added for better predictions)
 
-## Goal -
-To achieve precision farming by optimizing the agricultural production.
-The project is intended on Precision Farming.
+---
 
-➔ To Optimize Productivity
+## 🏆 Machine Learning Approach:
+- **Dimensionality Reduction:** PCA is applied to reduce redundant features.
+- **Classification Models Used:**
+  - Logistic Regression
+  - Decision Tree
+  - SVM
+  - Gaussian Naïve Bayes
+  - K-Nearest Neighbors (KNN)
+  - Bagging Classifier
+  - AdaBoost
+  - Gradient Boosting
+  - XGBoost  
 
-➔ By Understanding requirements of climatic and soil conditions for crops.
+---
 
-➔ Helps us to Cope up with weather unpredictability.
+## 📊 PCA Implementation:
+To improve efficiency, **PCA (Principal Component Analysis)** is used:
+- Reduces feature dimensionality.
+- Improves model performance.
+- Ensures better generalization.
 
-## About The Dataset Used (data.csv) -
-The Dataset Consists of 22 Unique Crops such as Maize, Wheat, Mango, Watermelon, Mango etc.
+---
 
-➔ The dataset consists of climatic conditions required to grow the crops.
+## 🔍 Updated Classification Accuracy:
+| Model                         | Accuracy |
+|--------------------------------|----------|
+| Logistic Regression            | 0.88     |
+| Decision Tree                  | 0.96     |
+| SVM                             | 0.93     |
+| Gaussian Naïve Bayes            | 0.99     |
+| K-Nearest Neighbors             | 0.93     |
+| Bagging Classifier              | 0.97     |
+| AdaBoost                        | 0.17     |
+| Gradient Boosting               | 0.97     |
+| XGBoost                         | 0.95     |
 
-   ◆ Temperature, Humidity, Rainfall.
+---
 
-➔ The dataset also consists of soil conditions required to grow the crops
+## 📁 Dataset:
+- Contains **22 unique crops** (e.g., Maize, Wheat, Mango, Watermelon).
+- Captures soil and climate factors needed for crop growth.
 
-   ◆ N: The Ratio of Nitrogen Content in Soil.
-   
-   ◆ P: The Ratio of Phosphorus Content in Soil.
-   
-   ◆ K: The Ratio of Potassium Content in Soil.
-   
-   ◆ pH: pH of the Soil
-   
-   
-   ## Libraries Used In The Project - 
-   
-● Numpy: Used for Mathematical Operations.
+---
 
-● Pandas: Used for DataFrame Operations.
+## 📌 Libraries Used:
+- **Data Handling:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Machine Learning:** Scikit-Learn, XGBoost
+- **Feature Engineering:** PCA, Label Encoding
 
-● Seaborn and Matplotlib: Used for Data Visualizations.
-
-● Ipywidgets: Used for Interactive Analysis.
-
-● Sklearn: Used for Machine Learning Algorithms
-
+This model aims to **revolutionize precision farming** by providing **data-driven crop recommendations**! 🚀
